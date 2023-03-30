@@ -1,0 +1,527 @@
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cambria';
+    font-size: 16px;
+    background-color: #FAFDF5;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    height: 150px;
+    background-color: #A0C9F4;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url('../fontes/Ubuntu-Regular.ttf') format('truetype');
+}
+
+header nav {
+    align-self: flex-end;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #385DA6;
+    padding: 10px 15px;
+    font-family: 'Ubuntu-Regular';
+    font-size: 17px;
+}
+
+header nav a:hover {
+    color: #221284;
+    font-weight: bolder;
+}
+
+#titulis{
+padding-left: 380px;
+}
+
+#um{
+    margin: 50px 0px;
+    padding-right: 20px;
+}
+
+#logo {
+    height: 150px;
+    padding: 0px 30px;
+}
+
+#img-topo{
+    height: 200px;
+  }
+
+#container {
+    max-width: 1900px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 100px;
+}
+
+footer {
+    background-color: #A0C9F4;
+    color: white;
+    font-size: 15px;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+footer span {
+    font-size: 20px;
+    font-family: 'Ubuntu-Regular';
+    color: #0000a0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ESTILIZANDO A PÁGINA INDEX.HTML */
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 800px;
+    margin: auto;
+    margin-top: 35px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+    bottom: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+    bottom: 10px;
+
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+    bottom: 10px;
+}
+
+.slider li input:checked~img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+#conheca {
+    font-family: 'Ubuntu-Regular';
+    margin-left: 20px;
+}
+
+#clientes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.img-clientes {
+    width: 200px;
+    border-radius: 15px;
+    padding: 0 5px 0 5px;
+}
+
+.animais {
+    padding: 5px 10px 0 10px;
+    color: #000;
+    font-size: 18px;
+}
+
+/* ESTILIZANDO A PÁGINA LOGIN.HTML */
+
+#frm-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 30px 40px 0px 40px;
+}
+
+#frm-sobre input, textarea {
+    font-family: 'Cambria';
+    font-size: 16px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    border: solid 1px lightslategray;
+    padding: 5px;
+}
+
+button {
+    padding: 8px 40px;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Cambria';
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+#botao-entrar {
+    background-color: #385DA6;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#div1 {
+    background-color:#AECCE2;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 30px 450px;
+    height: 500px;
+    width: 550px;
+}
+
+#div2 {
+    padding: 10px 0px;
+    background-color:#DEE9EF;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 10px 20px;
+    font-family: 'Cambria';
+}
+
+#div3 {
+    background-color:#DEE9EF;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 10px 20px;
+    font-family: 'Cambria';
+}
+
+#esqueceu {
+    color: #221284;
+    font-family: 'Cambria';
+}
+
+#faca-login {
+    font-family: 'Ubuntu-Regular';
+    font-size: 30px;
+}
+
+#hr {
+    display: flex;
+}
+
+.hr {
+   width: 180px;
+   color: black;
+   border: 1px solid black;
+}
+
+#botao-cadastre-se {
+    background-color:#385DA6;
+    margin: 0px 0px 15px 0px;
+    color: white;
+    font-family: 'Cambria';
+}
+
+#botao-cadastre-se:hover{
+    background-color: #ffffff;
+    color: #A0C9F4;
+}
+
+/* ESTILIZANDO A PÁGINA LOGIN.HTML */
+
+#login {
+   display: flex;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
+}
+
+#div1-cadastro {
+    background-color:#AECCE2;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 30px 450px;
+    height: 500px;
+    width: 550px;
+}
+
+#div2-cadastro {
+    padding: 10px 0px;
+    background-color:#DEE9EF;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 10px 20px;
+    font-family: 'Cambria';
+}
+
+#div3-cadastro {
+    background-color:#DEE9EF;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 10px 20px;
+    font-family: 'Cambria';
+}
+
+#botao-cadastrar {
+    margin: 10px 10px 0px 0px;
+    background-color: #385DA6;
+    color: white;
+    font-family: 'Cambria';
+}
+
+#botao-cadastrar:hover{
+    background-color: #ffffff;
+    color: #A0C9F4;
+}
+
+#botao-cancelar {
+    margin: 10px 0px 0px 5px;
+    background-color: #385DA6;
+    color: white;
+    font-family: 'Cambria';
+}
+
+#botao-cancelar:hover{
+    background-color: rgb(255, 0, 0);
+    color: #ffd1d1;
+}
+
+#p-conectar {
+    font-family: 'Cambria';
+    color: #385DA6;
+    text-decoration: underline;
+}
+
+#cadastre {
+    font-family: 'Ubuntu-Regular';
+    font-size: 30px;
+}
+
+/* ESTILIZANDO A PÁGINA AGENDAMENTO.HTML */
+
+#div1-agendamento {
+   text-align: center;
+    background-color: #AECCE2;
+    width: 720px;
+    margin: 5px 600px 10px 300px;
+    padding: 0px;
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+
+.campoForm{
+    width: 600px;
+    height: 30px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: #DEE9EF;
+    font-family: 'Cambria';
+    text-align: left;
+}
+
+#select{
+    width: 610px;
+}
+
+#div-agendamento {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px 80px 20px 120px;
+}
+
+#h1-agendamento {
+    font-family: 'Ubuntu-Regular';
+    margin: 50px 0px 30px 0;
+    font-size: 30px;
+}
+
+#div-p p{
+    font-family: 'Cambria';
+    font-size: 17px;
+    text-align: center;
+}
+
+#div-p {
+    background-color:#AECCE2;
+    border-radius: 5px;
+    border: solid 1px gray;
+    width: 720px;
+    margin: 20px 300px 5px 300px;
+}
+
+#agendar {
+    background-color: #AECCE2;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 0px 300px 5px 300px;
+    width: 720px;
+}
+
+#botao-agendar {
+    margin: 10px 0px 10px 0px;
+    background-color: #385DA6;
+    color: white;
+    font-family: 'Cambria';
+    border-radius: 5px;
+}
+
+#botao-agendar:hover{
+    background-color: #ffffff;
+    color: #A0C9F4;
+}
+
+#botao-cancelar {
+    background-color:#385DA6;
+    color: white;
+    border-radius: 5px;
+}
+
+/* ESTILIZANDO A PÁGINA SOBRE.HTML */
+
+#frm-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 30px 40px 0px 40px;
+}
+
+#frm-sobre input, textarea {
+    font-family: 'Cambria';
+    font-size: 16px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    border: solid 1px lightslategray;
+    padding: 5px;
+}
+
+#conteudo-do-site{
+    width: 607px;
+    height: 200px;
+    padding-top: 200px;
+    padding-left: 113px;
+}
+#divImg{
+    width: 616px;
+    height: 500px;
+    top: 200px;
+    padding-left: 851px;
+    margin-top: 20px;
+}
+
+#conteudo-sobre{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0px auto ;
+    height: 100vh;
+}
+
+#conteudo-sobre-texto{
+    padding-right: 220px;
+    font-size: 15px;
+}
+
+#conteudo-sobre-texto h1, h2{
+    text-align: center;
+    font-family: 'Ubuntu-Regular';
+}
+
+/* ESTILIZANDO A PÁGINA CONTATO.HTML */
+
+#div-contato{
+    text-align: center;
+    font-family: 'Ubuntu-Regular';
+}
+
+#container1{
+   padding: 80px; 
+}
+
+#frm-buttons{
+    padding: 0px 30px 5px 20px;
+}
+
+#botao-entrar:hover{
+   color: #ffffff;
+    background-color: rgb(81, 255, 107);
+}
+
+#entrar-em-contato{
+    background-color: #c2cfd7;
+    display: flex;
+    padding: 10px 20px 10px 20px;
+}
+
+#entrar-em-contato h1{
+    color:white;
+    font-family: 'Ubuntu-Regular';
+}
+.mapa iframe{
+     width: 100%;
+    height: 230px;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.mapa{
+    padding-left: 490px;
+}
+
+#img-topo{
+  height: 200px;
+}
+
+#div-cadastro{
+    display: flex;
+    justify-content: center;
+}
